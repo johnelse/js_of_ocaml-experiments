@@ -1,0 +1,15 @@
+OASISFormat: 0.4
+OCamlVersion: >= 4.01
+Name:        js_of_ocaml-experiments
+Version:     0.1.0
+Authors:     John Else
+License:     ISC
+Synopsis:    js_of_ocaml experiments
+Plugins:     META (0.4), DevFiles (0.4)
+BuildTools:  ocamlbuild
+
+Executable script
+  CompiledObject:     byte
+  Path:               src
+  MainIs:             script.ml
+  BuildDepends:       js_of_ocaml, js_of_ocaml.syntax
