@@ -5,7 +5,7 @@ let start _ =
     let node = (element :> Dom.node) in
     Dom_html.document##body##appendChild (node);
 
-  Js._false)
+    Js._false)
 
 let _ =
   Dom_html.window##onload <- Dom_html.handler start
