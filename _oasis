@@ -12,4 +12,4 @@ Executable script
   CompiledObject:     byte
   Path:               src
   MainIs:             script.ml
-  BuildDepends:       js_of_ocaml, js_of_ocaml.syntax
+  BuildDepends:       js_of_ocaml, js_of_ocaml.ppx
