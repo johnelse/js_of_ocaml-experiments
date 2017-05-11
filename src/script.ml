@@ -1,8 +1,9 @@
 let start _ =
   let start_button = Dom_html.getElementById("start") in
   start_button##.onclick := Dom_html.handler (fun _ ->
-    let element = Dom_html.document##createElement (Js.string "button") in
-    let node = (element :> Dom.node Js.t) in
+    let new_button = Dom_html.createButton Dom_html.document in
+    new_button##.innerHTML := (Js.string "new button");
+    let node = (new_button :> Dom.node Js.t) in
     ignore (Dom_html.document##.body##appendChild (node));
 
     Js._false);
